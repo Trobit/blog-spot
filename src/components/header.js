@@ -6,7 +6,7 @@ import * as headerStyles from "../components/header.module.css"
 const Header = ({ siteTitle, siteDescription, about, contact, blog }) => (
   <header
     style={{
-      background: `rgba(50,50,50,0.8)`,
+      background: `rgba(75,23,50,0.8)`,
       marginBottom: `1.45rem`,
     }}
   >

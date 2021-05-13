@@ -5,6 +5,13 @@ module.exports = {
     author: `@jkidson`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: "78oumkvhla0b",
+        accessToken: "GRD5IFWNI92oKfO9bqZk6M70tT-8CGTkPsat-gryzQw"
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
