@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { INLINES, BLOCKS } from "@contentful/rich-text-types"
+import { withAuthenticationRequired } from "@auth0/auth0-react"
 export function RichTextResponse({ richTextResponse }) {
     return (
       <>{documentToReactComponents(richTextResponse.json, renderOptions(richTextResponse.links))}</>
@@ -81,4 +82,4 @@ const BlogPost = (props) => {
     )
 }
 
-export default BlogPost
+export default withAuthenticationRequired (BlogPost)
